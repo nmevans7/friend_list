@@ -1,0 +1,2 @@
+module StaticFriendsHelper
+end

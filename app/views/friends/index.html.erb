@@ -1,0 +1,16 @@
+<h1>Friends, All of them are Here!</h1>
+<p>Find or Create Friends, you decide...</p>
+
+<% @friends.each do |friend| %>
+
+  <%= link_to friend.name, friend_path(friend)%>
+  <%= link_to 'Edit', edit_friend_path(friend) %>
+  <%= link_to 'Delete', friend, method: :delete %>
+  <div></div>
+<% end %>
+
+<div></div>
+<%= link_to 'Create New Friend', new_friend_path %>
+<div></div>
+
+
